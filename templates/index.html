@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Stations</title>
+</head>
+<body>
+    <h1>Bike Stations</h1>
+    {% if stations %}
+        <ul>
+        {% for station in stations %}
+            <li>{{ station['name'] }} - Available Bikes: {{ station['available_bikes'] }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No stations available.</p>
+    {% endif %}
+</body>
+</html>
