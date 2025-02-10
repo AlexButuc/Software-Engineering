@@ -38,7 +38,7 @@ def update_rds(stations_data):
 
         # Insert new data into station_history table to keep track of data over time
         query_insert = """
-        INSERT INTO station_history (station_id, name, available_bikes, available_stands, timestamp)
+        INSERT INTO station_history (station_id, name, banking, status, available_bikes, available_stands, timestamp)
         VALUES (%s, %s, %s, %s, %s)
         """
         cursor.execute(
@@ -46,6 +46,8 @@ def update_rds(stations_data):
             (
                 station['number'],
                 station['name'],
+                station['banking'],
+                station['status'],
                 station['available_bikes'],
                 station['available_bike_stands'],
                 timestamp
