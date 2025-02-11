@@ -9,7 +9,7 @@ CONTRACT_NAME = "Dublin"
 url = f"https://api.jcdecaux.com/vls/v1/stations?contract={CONTRACT_NAME}&apiKey={API_KEY}"
 
 #RDS Database Connection Details
-db_host = "database-1.crosc2qqg17q.eu-north-1.rds.amazonaws.com"
+db_host = "database-1.cv4842ms2b5l.eu-north-1.rds.amazonaws.com"
 db_name = "my_bike_data"
 db_user = "admin"
 db_password = "P*B&a33v+!7xj+*"
