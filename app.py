@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     conn = mysql.connector.connect(
-        host="database-1.crosc2qqg17q.eu-north-1.rds.amazonaws.com",
+        host="database-1.cv4842ms2b5l.eu-north-1.rds.amazonaws.com",
         user="admin",
         password="P*B&a33v+!7xj+*",
         database="my_bike_data"
