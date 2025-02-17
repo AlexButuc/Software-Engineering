@@ -1,22 +1,31 @@
-from flask import Flask, render_template
-import mysql.connector
+from flask import Flask, render_template, jsonify
+import json
+import os
 
 app = Flask(__name__)
 
+# Function to load the latest JSON file
+def load_latest_json():
+    json_files = [f for f in os.listdir() if f.startswith("bike_data_") and f.endswith(".json")]
+    
+    if not json_files:
+        return []
+
+    latest_file = max(json_files, key=os.path.getctime)  # Get the most recently modified JSON file
+    
+    with open(latest_file, "r") as file:
+        data = json.load(file)
+
+    return data
+
 @app.route('/')
 def index():
-    conn = mysql.connector.connect(
-        host="database-1.cv4842ms2b5l.eu-north-1.rds.amazonaws.com",
-        user="admin",
-        password="P*B&a33v+!7xj+*",
-        database="my_bike_data"
-    )
-    cursor = conn.cursor(dictionary=True)  # This allows you to fetch rows as dictionaries
-    cursor.execute("SELECT * FROM stations")
-    stations = cursor.fetchall()  # This will now return a list of dictionaries
-    conn.close()
-
+    stations = load_latest_json()  # Load JSON data instead of querying the database
     return render_template("index.html", stations=stations)
+
+@app.route('/api/stations')
+def api_stations():
+    return jsonify(load_latest_json())  # API endpoint to return JSON data
 
 if __name__ == '__main__':
     app.run(debug=True)
