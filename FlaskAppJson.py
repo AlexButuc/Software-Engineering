@@ -4,6 +4,9 @@ import os
 
 app = Flask(__name__)
 
+# Replace this with your actual Google Maps API key
+GOOGLE_MAPS_API_KEY = 'AIzaSyCI_Cqvg1e7UTI33kicmL-qtaQAtlXtW10'
+
 # Function to load the latest JSON file
 def load_latest_json():
     json_files = [f for f in os.listdir() if f.startswith("bike_data_") and f.endswith(".json")]
@@ -21,7 +24,7 @@ def load_latest_json():
 @app.route('/')
 def index():
     stations = load_latest_json()  # Load JSON data instead of querying the database
-    return render_template("index.html", stations=stations)
+    return render_template("index.html", stations=stations, google_maps_api_key=GOOGLE_MAPS_API_KEY)
 
 @app.route('/api/stations')
 def api_stations():
