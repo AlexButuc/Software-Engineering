@@ -6,9 +6,70 @@
     <title>Dublin Map with Bike Stations</title>
     
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key={{ AIzaSyArbqOt0_HIapSIWPwmKJqjwfg8TDi6_6M }}&libraries=places&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=places&callback=initMap" async defer></script>
     
+    <style>
+        #weather-bar {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        #weather-bar img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        
+        #search-box {
+            width: 300px;
+            margin: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="weather-bar">
+        Loading Dublin weather...
+    </div>
+
+    <h2>Dublin Bike Stations Map</h2>
+
+    <input id="search-box" type="text" placeholder="Search for places in Dublin...">
+    <div id="map"></div>
+
     <script>
+        // Function to update weather bar
+        function updateWeatherBar(weatherData) {
+            if (!weatherData) {
+                document.getElementById('weather-bar').innerHTML = 'Weather data unavailable';
+                return;
+            }
+            
+            const weatherBar = document.getElementById('weather-bar');
+            weatherBar.innerHTML = `
+                <img src="http://openweathermap.org/img/w/${weatherData.icon}.png" alt="${weatherData.description}">
+                <div>
+                    <strong>${weatherData.temperature}°C</strong> | 
+                    ${weatherData.description} | 
+                    Wind: ${weatherData.wind_speed} m/s | 
+                    Humidity: ${weatherData.humidity}%
+                </div>
+            `;
+        }
+
         function initMap() {
             var dublin = { lat: 53.3498, lng: -6.2603 }; // Dublin center
 
@@ -17,19 +78,33 @@
                 center: dublin
             });
 
-            // Fetch locations from Flask API
+            // Fetch locations and update weather bar
             fetch('/locations')
                 .then(response => response.json())
                 .then(data => {
+                    // Update weather bar with first location's weather (they're all the same)
+                    if (data.length > 0 && data[0].weather) {
+                        updateWeatherBar(data[0].weather);
+                    }
+
                     data.forEach(location => {
                         var marker = new google.maps.Marker({
-                            position: { lat: location.lat, lng: location.lng },
+                            position: { lat: location.position.lat, lng: location.position.lng },
                             map: map,
                             title: location.name
                         });
 
                         var infoWindow = new google.maps.InfoWindow({
-                            content: `<h3>${location.name}</h3>`
+                            content: `
+                                <h3>${location.name}</h3>
+                                ${location.weather ? `
+                                    <p>Temperature: ${location.weather.temperature}°C</p>
+                                    <p>Weather: ${location.weather.description}</p>
+                                    <p>Wind Speed: ${location.weather.wind_speed} m/s</p>
+                                    <p>Humidity: ${location.weather.humidity}%</p>
+                                    <p>Last Updated: ${location.weather.timestamp}</p>
+                                ` : '<p>Weather data unavailable</p>'}
+                            `
                         });
 
                         marker.addListener('click', function() {
@@ -59,26 +134,5 @@
             });
         }
     </script>
-
-    <style>
-        #map {
-            height: 500px;
-            width: 100%;
-        }
-        #search-box {
-            width: 300px;
-            margin: 10px;
-            padding: 8px;
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body>
-
-    <h2>Dublin Bike Stations Map</h2>
-
-    <input id="search-box" type="text" placeholder="Search for places in Dublin...">
-    <div id="map"></div>
-
 </body>
 </html>
