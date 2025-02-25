@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dublin Map with Markers & Search</title>
+    <title>Dublin Map with Bike Stations</title>
     
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=places&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ AIzaSyArbqOt0_HIapSIWPwmKJqjwfg8TDi6_6M }}&libraries=places&callback=initMap" async defer></script>
     
     <script>
         function initMap() {
@@ -17,7 +17,7 @@
                 center: dublin
             });
 
-            // Fetch locations from Flask and add markers
+            // Fetch locations from Flask API
             fetch('/locations')
                 .then(response => response.json())
                 .then(data => {
@@ -75,7 +75,7 @@
 </head>
 <body>
 
-    <h2>Dublin Map with Multiple Markers & Search</h2>
+    <h2>Dublin Bike Stations Map</h2>
 
     <input id="search-box" type="text" placeholder="Search for places in Dublin...">
     <div id="map"></div>
