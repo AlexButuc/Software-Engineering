@@ -1,7 +1,9 @@
 from flask import Flask, render_template, jsonify
 import json
+from weather_service import WeatherService
 
 app = Flask(__name__)
+weather_service = WeatherService()
 
 # Load locations from JSON file
 with open("bike_data_2025-02-24_20-06-54.json", "r") as file:
@@ -13,15 +15,25 @@ def index():
 
 @app.route("/locations")
 def get_locations():
-    # Extract only relevant details for markers
-    filtered_locations = [
-        {
+    # Get Dublin weather once for all locations
+    weather_data = weather_service.get_dublin_weather()
+    
+    # Extract details for markers and add weather data
+    filtered_locations = []
+    for loc in locations:
+        location_data = {
             "name": loc["name"],
-            "lat": loc["position"]["lat"],
-            "lng": loc["position"]["lng"]
+            "position": {
+                "lat": loc["position"]["lat"],
+                "lng": loc["position"]["lng"]
+            }
         }
-        for loc in locations
-    ]
+        
+        if weather_data:
+            location_data["weather"] = weather_data
+            
+        filtered_locations.append(location_data)
+    
     return jsonify(filtered_locations)
 
 if __name__ == '__main__':
