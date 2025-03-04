@@ -38,6 +38,32 @@
             padding: 8px;
             font-size: 16px;
         }
+
+        .legend {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            z-index: 1000;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 1px solid #ffffff;
+        }
     </style>
 </head>
 <body>
@@ -49,6 +75,21 @@
 
     <input id="search-box" type="text" placeholder="Search for places in Dublin...">
     <div id="map"></div>
+    <div class="legend">
+        <h4 style="margin: 0 0 8px 0">Bike Availability</h4>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: green"></div>
+            <span>High (>66%)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: orange"></div>
+            <span>Medium (33-66%)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: red"></div>
+            <span>Low (<33%)</span>
+        </div>
+    </div>
 
     <script>
         // Function to update weather bar
@@ -88,15 +129,39 @@
                     }
 
                     data.forEach(location => {
+                        // Calculate availability percentage
+                        const availabilityPercent = (location.bikes.available / location.bikes.total) * 100;
+                        
+                        // Choose marker color based on availability
+                        let markerColor;
+                        if (availabilityPercent >= 66) {
+                            markerColor = 'green';
+                        } else if (availabilityPercent >= 33) {
+                            markerColor = 'orange';
+                        } else {
+                            markerColor = 'red';
+                        }
+
                         var marker = new google.maps.Marker({
                             position: { lat: location.position.lat, lng: location.position.lng },
                             map: map,
-                            title: location.name
+                            title: `${location.name} (${location.bikes.available}/${location.bikes.total} bikes)`,
+                            icon: {
+                                path: google.maps.SymbolPath.CIRCLE,
+                                fillColor: markerColor,
+                                fillOpacity: 0.8,
+                                strokeWeight: 1,
+                                strokeColor: '#ffffff',
+                                scale: 10
+                            }
                         });
 
                         var infoWindow = new google.maps.InfoWindow({
                             content: `
                                 <h3>${location.name}</h3>
+                                <div style="margin-bottom: 10px;">
+                                    <strong>Bikes Available:</strong> ${location.bikes.available} / ${location.bikes.total}
+                                </div>
                                 ${location.weather ? `
                                     <p>Temperature: ${location.weather.temperature}°C</p>
                                     <p>Weather: ${location.weather.description}</p>
