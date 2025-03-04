@@ -26,6 +26,10 @@ def get_locations():
             "position": {
                 "lat": loc["position"]["lat"],
                 "lng": loc["position"]["lng"]
+            },
+            "bikes": {
+                "available": loc["available_bikes"],
+                "total": loc["bike_stands"]
             }
         }
         
