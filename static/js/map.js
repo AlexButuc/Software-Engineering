@@ -30,11 +30,21 @@ function clearMarkers() {
 
 // Function to update map data
 function updateMapData() {
-    if (!map) return; // Don't update if map isn't initialized
+    if (!map) {
+        console.error('Map not initialized');
+        return;
+    }
 
     fetch('/locations')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log('Received data:', data);
+            
             // Update weather bar with first location's weather (they're all the same)
             if (data.length > 0 && data[0].weather) {
                 updateWeatherBar(data[0].weather);
@@ -82,7 +92,6 @@ function updateMapData() {
                             <p>Weather: ${location.weather.description}</p>
                             <p>Wind Speed: ${location.weather.wind_speed} m/s</p>
                             <p>Humidity: ${location.weather.humidity}%</p>
-                            <p>Last Updated: ${location.weather.timestamp}</p>
                         ` : '<p>Weather data unavailable</p>'}
                     `
                 });
@@ -95,45 +104,61 @@ function updateMapData() {
             });
         })
         .catch(error => {
-            console.error("Error fetching locations:", error);
-            document.getElementById('weather-bar').innerHTML = 'Error loading data';
+            console.error('Error fetching locations:', error);
+            document.getElementById('weather-bar').innerHTML = 'Error loading data. Please try refreshing the page.';
         });
 }
 
 // Initialize map when Google Maps API is ready
 function initMap() {
     console.log('Initializing map...');
-    var dublin = { lat: 53.3498, lng: -6.2603 }; // Dublin center
+    try {
+        const dublin = { lat: 53.3498, lng: -6.2603 }; // Dublin center
 
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        center: dublin
-    });
-
-    // Initial data load
-    updateMapData();
-
-    // Set up periodic updates every 30 seconds
-    setInterval(updateMapData, 30000);
-
-    // Add Search Box
-    var input = document.getElementById('search-box');
-    var searchBox = new google.maps.places.SearchBox(input);
-    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
-    searchBox.addListener('places_changed', function() {
-        var places = searchBox.getPlaces();
-        if (places.length == 0) return;
-
-        var bounds = new google.maps.LatLngBounds();
-        places.forEach(place => {
-            if (!place.geometry) return;
-            if (place.geometry.viewport) bounds.union(place.geometry.viewport);
-            else bounds.extend(place.geometry.location);
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: dublin,
+            mapTypeControl: true,
+            streetViewControl: true,
+            fullscreenControl: true
         });
 
-        map.fitBounds(bounds);
-    });
-    
-    console.log('Map initialized successfully');
+        // Add Search Box
+        const input = document.getElementById('search-box');
+        const searchBox = new google.maps.places.SearchBox(input);
+        
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+        // Bias SearchBox results towards current map's viewport
+        map.addListener('bounds_changed', function() {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        searchBox.addListener('places_changed', function() {
+            const places = searchBox.getPlaces();
+            if (places.length == 0) return;
+
+            const bounds = new google.maps.LatLngBounds();
+            places.forEach(place => {
+                if (!place.geometry) return;
+                if (place.geometry.viewport) {
+                    bounds.union(place.geometry.viewport);
+                } else {
+                    bounds.extend(place.geometry.location);
+                }
+            });
+            map.fitBounds(bounds);
+        });
+
+        // Initial data load
+        updateMapData();
+
+        // Set up periodic updates every 30 seconds
+        setInterval(updateMapData, 30000);
+
+        console.log('Map initialized successfully');
+    } catch (error) {
+        console.error('Error initializing map:', error);
+        document.getElementById('map').innerHTML = 'Error loading map. Please try refreshing the page.';
+    }
 } 

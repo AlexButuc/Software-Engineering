@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublin Bike Stations Map</title>
+    
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+    
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ api_key }}&libraries=places&callback=initMap" async defer></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #69B578;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        #weather-bar {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        #weather-bar img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        #map {
+            height: 500px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        #search-box {
+            width: 300px;
+            margin: 10px;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .legend {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 30px;
+            right: 10px;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 1px solid #ffffff;
+        }
+
+        .container {
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .page-title {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #69B578;
+            color: white;
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Logo Bike sharing Dublin</a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/map">Map</a>
+            <a href="/subscription">Subscription</a>
+            <a href="/contact">contact us</a>
+            <a href="/login">login/sign up</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="weather-bar">
+            Loading Dublin weather...
+        </div>
+
+        <h2 class="page-title">Dublin Bike Stations Map</h2>
+
+        <input id="search-box" type="text" placeholder="Search for places in Dublin...">
+        <div id="map"></div>
+        <div class="legend">
+            <h4 style="margin: 0 0 8px 0">Bike Availability</h4>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: green"></div>
+                <span>High (>66%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: orange"></div>
+                <span>Medium (33-66%)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: red"></div>
+                <span>Low (<33%)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>Contact us</div>
+        <div class="footer-links">
+            <a href="tel:+353">phone</a>
+            <a href="mailto:info@dublinbikes.ie">email</a>
+            <a href="https://instagram.com/dublinbikes">instagram</a>
+            <a href="https://facebook.com/dublinbikes">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html> 

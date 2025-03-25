@@ -84,7 +84,11 @@ load_bike_data()
 
 @app.route("/")
 def index():
-    return render_template("index.html", api_key="AIzaSyArbqOt0_HIapSIWPwmKJqjwfg8TDi6_6M")
+    return render_template("index.html")
+
+@app.route("/map")
+def map():
+    return render_template("map.html", api_key="AIzaSyArbqOt0_HIapSIWPwmKJqjwfg8TDi6_6M")
 
 @app.route("/locations")
 def get_locations():
@@ -114,4 +118,6 @@ def get_locations():
     return jsonify(filtered_locations)
 
 if __name__ == '__main__':
+    # Create static/images directory if it doesn't exist
+    os.makedirs('static/images', exist_ok=True)
     app.run(debug=True)
