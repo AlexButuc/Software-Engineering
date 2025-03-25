@@ -1,13 +1,86 @@
 from flask import Flask, render_template, jsonify
 import json
 from weather_service import WeatherService
+import glob
+import os
+from datetime import datetime
+import requests
+import threading
+import time
 
 app = Flask(__name__)
 weather_service = WeatherService()
 
-# Load locations from JSON file
-with open("bike_data_2025-02-24_20-06-54.json", "r") as file:
-    locations = json.load(file)
+# Global variable to store bike locations
+locations = []
+
+def get_newest_bike_data_file():
+    files = glob.glob("bike_data_*.json")
+    if not files:
+        return None
+    return max(files, key=os.path.getctime)
+
+def cleanup_old_files():
+    # Get all bike data files
+    files = glob.glob("bike_data_*.json")
+    if len(files) <= 5:
+        return
+    
+    # Sort files by creation time (oldest first)
+    files.sort(key=os.path.getctime)
+    
+    # Remove all but the 5 newest files
+    files_to_remove = files[:-5]
+    for file in files_to_remove:
+        try:
+            os.remove(file)
+            print(f"Removed old file: {file}")
+        except Exception as e:
+            print(f"Error removing file {file}: {str(e)}")
+
+def load_bike_data():
+    global locations
+    newest_file = get_newest_bike_data_file()
+    if newest_file:
+        with open(newest_file, "r") as file:
+            locations = json.load(file)
+
+def fetch_and_save_bike_data():
+    API_KEY = "64bac24f3e0daee76a46c131c8641d1c4d92ac99"
+    CONTRACT_NAME = "Dublin"
+    url = f"https://api.jcdecaux.com/vls/v1/stations?contract={CONTRACT_NAME}&apiKey={API_KEY}"
+    
+    while True:
+        try:
+            response = requests.get(url)
+            if response.status_code == 200:
+                data = response.json()
+                timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+                filename = f"bike_data_{timestamp}.json"
+                
+                with open(filename, "w") as file:
+                    json.dump(data, file, indent=4)
+                
+                # Update the global locations variable
+                global locations
+                locations = data
+                print(f"Updated bike data at {timestamp}")
+                
+                # Clean up old files after saving new one
+                cleanup_old_files()
+            else:
+                print(f"Error fetching data: {response.status_code}")
+        except Exception as e:
+            print(f"Error updating bike data: {str(e)}")
+        
+        time.sleep(300)  # Wait 5 minutes
+
+# Start the background thread for API updates
+update_thread = threading.Thread(target=fetch_and_save_bike_data, daemon=True)
+update_thread.start()
+
+# Load initial bike data
+load_bike_data()
 
 @app.route("/")
 def index():

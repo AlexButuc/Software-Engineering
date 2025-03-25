@@ -1,3 +1,6 @@
+let map;
+let markers = [];
+
 // Function to update weather bar
 function updateWeatherBar(weatherData) {
     if (!weatherData) {
@@ -17,15 +20,18 @@ function updateWeatherBar(weatherData) {
     `;
 }
 
-function initMap() {
-    var dublin = { lat: 53.3498, lng: -6.2603 }; // Dublin center
+// Function to clear all markers from the map
+function clearMarkers() {
+    for (let marker of markers) {
+        marker.setMap(null);
+    }
+    markers = [];
+}
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        center: dublin
-    });
+// Function to update map data
+function updateMapData() {
+    if (!map) return; // Don't update if map isn't initialized
 
-    // Fetch locations and update weather bar
     fetch('/locations')
         .then(response => response.json())
         .then(data => {
@@ -33,6 +39,9 @@ function initMap() {
             if (data.length > 0 && data[0].weather) {
                 updateWeatherBar(data[0].weather);
             }
+
+            // Clear existing markers
+            clearMarkers();
 
             data.forEach(location => {
                 // Calculate availability percentage
@@ -81,9 +90,31 @@ function initMap() {
                 marker.addListener('click', function() {
                     infoWindow.open(map, marker);
                 });
+
+                markers.push(marker);
             });
         })
-        .catch(error => console.error("Error fetching locations:", error));
+        .catch(error => {
+            console.error("Error fetching locations:", error);
+            document.getElementById('weather-bar').innerHTML = 'Error loading data';
+        });
+}
+
+// Initialize map when Google Maps API is ready
+function initMap() {
+    console.log('Initializing map...');
+    var dublin = { lat: 53.3498, lng: -6.2603 }; // Dublin center
+
+    map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        center: dublin
+    });
+
+    // Initial data load
+    updateMapData();
+
+    // Set up periodic updates every 30 seconds
+    setInterval(updateMapData, 30000);
 
     // Add Search Box
     var input = document.getElementById('search-box');
@@ -103,4 +134,6 @@ function initMap() {
 
         map.fitBounds(bounds);
     });
+    
+    console.log('Map initialized successfully');
 } 
