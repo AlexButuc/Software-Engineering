@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import json
 from weather_service import WeatherService
 import glob
@@ -120,6 +120,10 @@ def get_locations():
         filtered_locations.append(location_data)
     
     return jsonify(filtered_locations)
+
+@app.route("/purchase")
+def purchase():
+    return render_template("purchase.html")
 
 if __name__ == '__main__':
     # Create static/images directory if it doesn't exist
