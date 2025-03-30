@@ -90,6 +90,10 @@ def index():
 def map():
     return render_template("map.html", api_key="AIzaSyArbqOt0_HIapSIWPwmKJqjwfg8TDi6_6M")
 
+@app.route("/subscription")
+def subscription():
+    return render_template("subscription.html")
+
 @app.route("/locations")
 def get_locations():
     # Get Dublin weather once for all locations
