@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Subscription - Bike Sharing Dublin</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #540f0f;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #69B578;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5a9b5e;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Purchase Subscription</h1>
+    <div class="form-container">
+        <form id="purchase-form">
+            <label for="subscription-plan">Choose your plan:</label>
+            <select id="subscription-plan" required>
+                <option value="1-day" data-price="5">1 Day Ticket - €5</option>
+                <option value="3-day" data-price="12">3 Day Ticket - €12</option>
+                <option value="annual" data-price="35">Annual Pass - €35</option>
+            </select>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" disabled>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter your email">
+
+            <label for="bank-details">Bank Details:</label>
+            <input type="text" id="bank-details" required placeholder="Enter your bank details">
+
+            <button type="submit">Confirm Purchase</button>
+        </form>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        // Update price based on selected plan
+        document.getElementById('subscription-plan').addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex];
+            const price = selectedOption.getAttribute('data-price');
+            document.getElementById('price').value = price;
+        });
+
+        document.getElementById('purchase-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Generate a random string for confirmation
+            const randomString = Math.random().toString(36).substring(2, 15);
+            document.getElementById('result').innerText = `Your confirmation code: ${randomString}`;
+            
+            // Optionally, you can clear the form after submission
+            this.reset();
+        });
+
+        // Trigger change event to set initial price
+        document.getElementById('subscription-plan').dispatchEvent(new Event('change'));
+    </script>
+
+</body>
+</html> 

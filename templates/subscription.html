@@ -190,6 +190,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore amet, in dicta saepe porro, excepturi soluta placeat deleniti ipsam earum vel! Accusantium amet fugit nesciunt minus numquam iusto, maxime culpa.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quidem nihil quae necessitatibus amet sit similique officiis nemo ab. Maxime quo error doloribus est nisi dolore magnam quisquam voluptatibus! Voluptas?
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate cupiditate ex sit hic dignissimos placeat, ad sed laboriosam harum repellendus pariatur magnam repudiandae minus omnis, vel facere. Exercitationem, nemo fuga delectus illum earum, nobis culpa temporibus maxime quaerat laboriosam perspiciatis quasi sequi explicabo mollitia optio libero corrupti repellendus incidunt vel! Aliquam itaque aperiam nam dignissimos soluta dolor numquam aspernatur saepe fuga consectetur! Provident aliquid eaque cum ut? Quibusdam dignissimos voluptatibus iure unde veritatis blanditiis rem labore earum vero cupiditate, ut repellendus, doloribus, obcaecati sit facilis consequatur nemo dolore in odio animi beatae voluptates voluptatum. Non numquam quas dignissimos? Accusantium, ipsam?Access bikes for 24 hours, great for short visits. First 30 minutes free, then €0.50 per hour.</p>
+                        <button onclick="location.href='/purchase?plan=1 Day Ticket&price=€5'">Buy</button>
                     </div>
                 </div>
             </div>
@@ -203,6 +204,7 @@
                     <div class="flip-card-back">
                         <h2>3 Day Ticket</h2>
                         <p>Enjoy unlimited access for 3 days. First 30 minutes free, then €0.50 per hour.</p>
+                        <button onclick="location.href='/purchase?plan=3 Day Ticket&price=€12'">Buy</button>
                     </div>
                 </div>
             </div>
@@ -216,6 +218,7 @@
                     <div class="flip-card-back">
                         <h2>Annual Pass</h2>
                         <p>Best value for frequent riders. €35 per year, unlimited short trips.</p>
+                        <button onclick="location.href='/purchase?plan=Annual Pass&price=€35'">Buy</button>
                     </div>
                 </div>
             </div>
@@ -271,6 +274,25 @@
             <a href="https://facebook.com" target="_blank">Facebook</a>
         </div>
     </footer>
+
+    <script>
+        function selectPlan(plan) {
+            document.getElementById('subscription-option').value = plan;
+        }
+
+        document.getElementById('purchase-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Generate a random string
+            const randomString = Math.random().toString(36).substring(2, 15);
+
+            // Display the random string
+            document.getElementById('result').innerText = `Your confirmation code: ${randomString}`;
+            
+            // Optionally, you can clear the form after submission
+            this.reset();
+        });
+    </script>
 
 </body>
 </html>
