@@ -1,0 +1,298 @@
+/* Base Styles */
+:root {
+    --primary: #69B578;
+    --text-dark: #333;
+    --text-light: #666;
+    --background-light: #f5f5f5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 100px; 
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #E0FFE0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('../images/dublin_bridge_with_bike.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    position: relative;
+    color: var(--white);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Content Section */
+.content {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background-color: var(--background-light);
+}
+
+/* Alternating Grid Section */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background-color: var(--background-light);
+}
+
+.content-box {
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid;
+    border-image: linear-gradient(to right, #69B578, #a4e6b3);
+    border-image-slice: 1;
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(105, 181, 120, 0.2);
+}
+
+.content-box h2 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 1.75rem; 
+    font-weight: 700;   
+    letter-spacing: 0.5px;
+    text-transform: uppercase; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08); 
+}
+
+.content-box h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.content-box p {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    min-height: 400px;
+}
+
+.tall-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+    
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    text-align: center;
+}
+
+.contact-icon a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-icon a:hover {
+    transform: scale(1.05);
+}
+
+.contact-icon-img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 4px;
+}
+
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    border: 2px solid var(--primary);
+    box-shadow: 0 4px 12px rgba(105, 181, 120, 0.3); /* light green glow */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-end;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
