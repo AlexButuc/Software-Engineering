@@ -1,0 +1,243 @@
+
+:root {
+    --primary: #69B578;
+    --text-dark: #333;
+    --text-light: #666;
+    --background-light: #f5f5f5;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+}
+
+.page-title,
+#search-box,
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 100px; 
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #E0FFE0;
+}
+
+/*Toggle Button*/
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5ca867;
+}
+
+/* Weather Bar */
+#weather-bar {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#weather-bar img {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-section {
+    background-color: #eaf6ff; /* soft blue background */
+    padding: 10px 0;
+    border-bottom: 1px solid #d0e4f5;
+}
+
+/* Map Section */
+#map {
+    height: 500px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-box {
+    width: 300px;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Legend */
+.legend {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    font-size: 0.95rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout */
+.container {
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-height: calc(100vh - 180px);
+}
+
+.page-title {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a,
+.contact-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.contact-icon a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-icon a:hover {
+    transform: scale(1.05);
+}
+
+.contact-icon-img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 4px;
+}
+
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    border: 2px solid var(--primary);
+    box-shadow: 0 4px 12px rgba(105, 181, 120, 0.3); /* light green glow */
+}
