@@ -4,164 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subscription - Bike Sharing Dublin</title>
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
     <script src="{{ url_for('static', filename='js/subscription.js') }}" defer></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-            scroll-behavior: smooth;
-        }
-        nav {
-            background-color: #69B578;
-            padding: 1rem 2rem; 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .banner-container img {
-            width: 100%;
-            /* height: 20%; */
-            /* height: auto; Adjust height automatically while maintaining aspect ratio */
-            max-height: 400px;
-            object-fit: cover;
-        }
-
-        h1 {
-            display: flex;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #540f0f;
-            letter-spacing: 2px;
-            padding: 10px 20px;
-            border-radius: 10px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
-            margin: 20px auto; /* Ensures full centering */
-            width: fit-content; 
-        }
-
-        /* .subscription-container {
-            min-height: calc(100vh - 180px); 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 2rem 0;
-        } */
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-            max-width: 800px; /* Restrict width to fit 3 cards */
-            margin: 0 auto/* Centers the grid */  
-        }
-
-        .flip-card {
-            background-color: transparent;
-            /* width: 100%; */
-            height: 400px;
-            perspective: 1000px;
-            cursor: pointer;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            padding: 20px; /* behind text */
-            flex-direction: column;
-            transition: background 0.3s ease;
-            color: whitesmoke;
-            overflow: hidden;
-        }
-
-        .flip-card-front {
-            background: #212121;
-        }
-        
-        .flip-card-back {
-            transform: rotateY(180deg);
-            overflow: auto;
-        }
-
-        .flip-card:hover .flip-card-front {
-            background: #963939;
-        }
-        .flip-card:hover .flip-card-back {
-            background: #00023a;
-        }
-        .flip-card-back p {
-            font-size: clamp(0.8rem, 1vw, 1rem);
-            line-height: 1.4;
-            padding: 5px;
-            overflow-y: auto;
-            scrollbar-width: none;
-        }
-            /* Footer */
-        footer {
-            background-color: #69B578;
-            color: white;
-            padding: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 1rem;
-        }
-        .footer-links {
-            display: flex;
-            gap: 2rem;
-        }
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-        }
-
-    </style>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Circle-icons-bike.svg.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/subscription_styles.css') }}">
 </head>
 <body>
 
     <!-- Navigation -->
     <nav>
-        <a href="/" class="logo">Logo Bike sharing Dublin</a>
+        <a href="/" class="logo">
+            <img src="{{ url_for('static', filename='images/Logo_bike_sharing.png') }}" alt="Bike Sharing Dublin Logo" class="logo-image">
+        </a>
         <div class="nav-links">
             <a href="/">Home</a>
             <a href="/map">Map</a>
@@ -172,9 +25,8 @@
 
     <!-- Subscription Section -->
     <section class="subscription-container">
-        <div class="banner-container">
-            <img src="/static/images/subscription_img.jpg" alt="Dublin Bikes Subscription" class="banner-image">
-        </div>
+        <img src="{{ url_for('static', filename='images/sub_banner_pic.png') }}" alt="Green Bike Banner" class="banner-image">
+
 
         <h1>CHOOSE YOUR PLAN</h1>
         <div class="cards-container">
@@ -187,7 +39,7 @@
                     <div class="flip-card-back">
                         <h2>1 Day Ticket</h2>
                         <p>Access bikes for 24 hours, great for short visits. First 30 minutes free, then €0.50 per hour.</p>
-                        <button onclick="location.href='/purchase?plan=1 Day Ticket&price=€5'">Buy</button>
+                        <button aria-label="Buy 1 Day Ticket" onclick="location.href='/purchase?plan=1 Day Ticket&price=€5'">Buy</button>
                     </div>
                 </div>
             </div>
@@ -201,7 +53,7 @@
                     <div class="flip-card-back">
                         <h2>3 Day Ticket</h2>
                         <p>Enjoy unlimited access for 3 days. First 30 minutes free, then €0.50 per hour.</p>
-                        <button onclick="location.href='/purchase?plan=3 Day Ticket&price=€12'">Buy</button>
+                        <button aria-label="Buy 3 Day Ticket" onclick="location.href='/purchase?plan=3 Day Ticket&price=€12'">Buy</button>
                     </div>
                 </div>
             </div>
@@ -215,7 +67,7 @@
                     <div class="flip-card-back">
                         <h2>Annual Pass</h2>
                         <p>Best value for frequent riders. €35 per year, unlimited short trips.</p>
-                        <button onclick="location.href='/purchase?plan=Annual Pass&price=€35'">Buy</button>
+                        <button aria-label="Buy Annual Pass" onclick="location.href='/purchase?plan=Annual Pass&price=€35'">Buy</button>
                     </div>
                 </div>
             </div>
@@ -224,12 +76,31 @@
 
     <!-- Footer -->
     <footer id="footer">
-        <div>Contact us</div>
+        <div class="footer-title">Contact us</div>
         <div class="footer-links">
-            <a href="tel:089245374273">089 245374273</a>
-            <a href="mailto:group3-support@ucd.com">group3-support@ucd.com</a>
-            <a href="https://instagram.com" target="_blank">instagram</a>
-            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <!-- Phone -->
+            <div class="contact-icon">
+                <a href="tel:089245374273">
+                    <img src="{{ url_for('static', filename='images/phone_icon.png') }}" alt="Phone icon" class="contact-icon-img">
+                    <span>089 245374273</span>
+                </a>
+            </div>
+    
+            <!-- Email -->
+            <div class="contact-icon">
+                <a href="mailto:group3-support@ucd.com">
+                    <img src="{{ url_for('static', filename='images/email_icon.png') }}" alt="Email icon" class="contact-icon-img">
+                    <span>group3-support@ucd.com</span>
+                </a>
+            </div>
+    
+            <!-- Socials  -->
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <img src="{{ url_for('static', filename='images/social-instagram-new-circle-512.jpg') }}" class="social-icon">
+            </a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <img src="{{ url_for('static', filename='images/facebook_circle_color-512.jpg') }}" class="social-icon">
+            </a>
         </div>
     </footer>
 
