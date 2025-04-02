@@ -4,49 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purchase Subscription - Bike Sharing Dublin</title>
-    <style>
-        /* Add your styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #540f0f;
-        }
-        .form-container {
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #69B578;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #5a9b5e;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/Circle-icons-bike.svg.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/purchase_styles.css') }}">
 </head>
 <body>
-
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">
+            <img src="{{ url_for('static', filename='images/Logo_bike_sharing.png') }}" alt="Bike Sharing Dublin Logo" class="logo-image">
+        </a>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/map">Map</a>
+            <a href="/subscription">Subscription</a>
+            <a href="#footer">Contact us</a>
+        </div>
+    </nav>
+    
     <h1>Purchase Subscription</h1>
     <div class="form-container">
         <form id="purchase-form">
@@ -71,6 +45,12 @@
         <p id="result"></p>
     </div>
 
+    
+    <!-- Go Back Button -->
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="{{ url_for('subscription') }}" class="back-button">← Return to Subscription</a>
+    </div>
+
     <script>
         // Update price based on selected plan
         document.getElementById('subscription-plan').addEventListener('change', function() {
@@ -93,6 +73,37 @@
         // Trigger change event to set initial price
         document.getElementById('subscription-plan').dispatchEvent(new Event('change'));
     </script>
+
+     <!-- Footer -->
+     <footer id="footer">
+        <div class="footer-title">Contact us</div>
+        <div class="footer-links">
+            <!-- Phone -->
+            <div class="contact-icon">
+                <a href="tel:089245374273">
+                    <img src="{{ url_for('static', filename='images/phone_icon.png') }}" alt="Phone icon" class="contact-icon-img">
+                    <span>089 245374273</span>
+                </a>
+            </div>
+    
+            <!-- Email -->
+            <div class="contact-icon">
+                <a href="mailto:group3-support@ucd.com">
+                    <img src="{{ url_for('static', filename='images/email_icon.png') }}" alt="Email icon" class="contact-icon-img">
+                    <span>group3-support@ucd.com</span>
+                </a>
+            </div>
+    
+            <!-- Socials  -->
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <img src="{{ url_for('static', filename='images/social-instagram-new-circle-512.jpg') }}" class="social-icon">
+            </a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <img src="{{ url_for('static', filename='images/facebook_circle_color-512.jpg') }}" class="social-icon">
+            </a>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/purchase.js') }}"></script>
 
 </body>
 </html> 
