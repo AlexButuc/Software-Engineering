@@ -128,4 +128,4 @@ def purchase():
 if __name__ == '__main__':
     # Create static/images directory if it doesn't exist
     os.makedirs('static/images', exist_ok=True)
-    app.run(debug=True)
+    app.run(host = "0.0.0.0", port = 80, debug = False)
