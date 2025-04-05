@@ -87,7 +87,7 @@ function updateMapData() {
                 // Optional: Add a Google Street View Static Image for each station
                 // (Requires that the same API key has Street View Static API enabled)
                 const streetViewImageUrl = `
-                https://maps.googleapis.com/maps/api/streetview?size=120x120&location=${location.position.lat},${location.position.lng}&key=AIzaSyArbqOt0_HIapSIWPwmKJqjwfg8TDi6_6M
+                https://maps.googleapis.com/maps/api/streetview?size=120x120&location=${location.position.lat},${location.position.lng}&key=AIzaSyCuA1xC9ReXRyKYZ4eEzXD-Pocky4br5x8
                 `.trim();
 
 

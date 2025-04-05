@@ -88,7 +88,7 @@ def index():
 
 @app.route("/map")
 def map():
-    return render_template("map.html", api_key="AIzaSyArbqOt0_HIapSIWPwmKJqjwfg8TDi6_6M")
+    return render_template("map.html", api_key="AIzaSyCuA1xC9ReXRyKYZ4eEzXD-Pocky4br5x8")
 
 @app.route("/subscription")
 def subscription():
