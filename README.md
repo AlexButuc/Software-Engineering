@@ -1,4 +1,4 @@
-# Dublin Bike Sharing System
+# Dublin Bike Sharing System - Whisper of Wheels
 
 A real-time web application that displays Dublin's bike sharing stations with live availability data and weather information. It also predicts availability of bikes at stations.
 
