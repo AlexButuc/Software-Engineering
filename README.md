@@ -15,7 +15,7 @@ A real-time web application that displays Dublin's bike sharing stations with li
 ## Technical Stack
 
 - **Backend**: Python Flask
-- **Frontend**: HTML, JavaScript
+- **Frontend**: HTML, CSS, JavaScript
 - **APIs**: 
   - JCDecaux API for bike data
   - OpenWeather API for weather information
