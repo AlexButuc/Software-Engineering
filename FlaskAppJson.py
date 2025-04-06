@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-# Replace this with your actual Google Maps API key
+# Google Maps API key
 GOOGLE_MAPS_API_KEY = 'AIzaSyCI_Cqvg1e7UTI33kicmL-qtaQAtlXtW10'
 
 # Function to load the latest JSON file
