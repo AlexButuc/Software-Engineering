@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import os
 
-# Your API key
+# The ``API key
 OPENWEATHER_API_KEY = "0c6e82fcf592941a58ea878933d06911"
 
 class WeatherService:
