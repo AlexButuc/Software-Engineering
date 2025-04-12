@@ -555,17 +555,6 @@ with open("avg_capacity.pkl", "rb") as f:
 print("[DEBUG] Loaded historical average occupancy data")
 
 # 3) Weather forecast function (returns only temperature and humidity)
-print("[DEBUG] Loaded ML model")
-
-# 2) Load historical average dictionaries for occupancy (Approach 2)
-# These files were saved during training.
-with open("avg_docks.pkl", "rb") as f:
-    avg_docks = pickle.load(f)
-with open("avg_capacity.pkl", "rb") as f:
-    avg_capacity = pickle.load(f)
-print("[DEBUG] Loaded historical average occupancy data")
-
-# 3) Weather forecast function (returns only temperature and humidity)
 def get_weather_forecast(city, date_str):
     """
     Fetch current weather data for the given city.
@@ -595,32 +584,9 @@ def get_weather_forecast(city, date_str):
         return {
             'temperature': temperature,
             'humidity': humidity
-            'temperature': temperature,
-            'humidity': humidity
         }
     except Exception as e:
         print(f"Error calling OpenWeather for city={city}: {e}")
-        return None
-
-# 4) Helper function to retrieve live station info (capacity and available docks)
-def get_station_info(station_id):
-    """
-    Given a station_id, searches the latest JCDecaux data (in locations) for the actual capacity
-    and calculates available docks as (capacity - available_bikes).
-    """
-    for loc in locations:
-        # Adjust based on your data keys (e.g., "number" or "station_id")
-        if loc.get("number") == station_id or loc.get("station_id") == station_id:
-            capacity = loc.get("bike_stands")
-            available_bikes = loc.get("available_bikes")
-            if capacity is not None and available_bikes is not None:
-                num_docks_available = capacity - available_bikes
-                print(f"[DEBUG] Station {station_id}: capacity={capacity}, available_docks={num_docks_available}")
-                return capacity, num_docks_available
-    print(f"[DEBUG] Station info not found for station_id {station_id}")
-    return None, None
-
-# 4) Prediction function: use live station data and weather to create input for the model
         return None
 
 # 4) Helper function to retrieve live station info (capacity and available docks)
@@ -669,25 +635,6 @@ def predict_bike_availability(station_id, city, year, month, day, hour, minute):
     day_of_week = dt.weekday()
     
     # Build input DataFrame for the model
-    if weather_features is None:
-        raise Exception("Weather data unavailable.")
-    
-    current_date = datetime.now().date()
-    if dt.date() == current_date:
-        capacity, num_docks_available = get_station_info(station_id)
-        if capacity is None or num_docks_available is None:
-            raise Exception(f"Station info not available for station_id {station_id}.")
-        print(f"[DEBUG] Using live occupancy data for station {station_id}")
-    else:
-        capacity = avg_capacity.get(station_id)
-        num_docks_available = avg_docks.get(station_id)
-        if capacity is None or num_docks_available is None:
-            raise Exception(f"Historical averages not available for station {station_id}.")
-        print(f"[DEBUG] Using historical occupancy averages for station {station_id}")
-    
-    day_of_week = dt.weekday()
-    
-    # Build input DataFrame for the model
     input_data = pd.DataFrame([{
         'station_id': station_id,
         'year': dt.year,
@@ -703,16 +650,6 @@ def predict_bike_availability(station_id, city, year, month, day, hour, minute):
     }])
 
     print(f"[DEBUG] Input data for prediction:\n{input_data}")
-    
-        'day_of_week': day_of_week,
-        'num_docks_available': num_docks_available,
-        'capacity': capacity,
-        'temperature': weather_features['temperature'],
-        'humidity': weather_features['humidity']
-    }])
-
-    print(f"[DEBUG] Input data for prediction:\n{input_data}")
-    
     prediction = model.predict(input_data)
     return float(prediction[0])
 
