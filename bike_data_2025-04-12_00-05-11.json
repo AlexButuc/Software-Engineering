@@ -11,7 +11,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 6,
         "available_bikes": 24,
         "status": "OPEN",
@@ -21,7 +21,7 @@
         "available_bikes": 29,
         "status": "OPEN",
         "last_update": 1744412267000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 30,
@@ -35,17 +35,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 15,
         "available_bikes": 5,
         "status": "OPEN",
-        "last_update": 1744456069000
+        "last_update": 1744456672000
 ========
         "available_bike_stands": 20,
         "available_bikes": 0,
         "status": "OPEN",
-        "last_update": 1744411990000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412594000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 54,
@@ -59,14 +59,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 33,
-        "available_bike_stands": 31,
-        "available_bikes": 2,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 30,
+        "available_bikes": 3,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456411000
+        "last_update": 1744456650000
 ========
-        "last_update": 1744412345000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "available_bike_stands": 32,
+        "available_bikes": 1,
+        "status": "OPEN",
+        "last_update": 1744412622000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 108,
@@ -80,7 +83,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 35,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 35,
         "available_bikes": 0,
         "status": "OPEN",
@@ -90,7 +93,7 @@
         "available_bikes": 8,
         "status": "OPEN",
         "last_update": 1744412232000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 20,
@@ -104,7 +107,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 28,
         "available_bikes": 2,
         "status": "OPEN",
@@ -113,8 +116,8 @@
         "available_bike_stands": 26,
         "available_bikes": 4,
         "status": "OPEN",
-        "last_update": 1744411874000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412479000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 56,
@@ -131,11 +134,11 @@
         "available_bike_stands": 10,
         "available_bikes": 30,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456473000
 ========
         "last_update": 1744412206000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 6,
@@ -149,7 +152,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 18,
         "available_bikes": 2,
         "status": "OPEN",
@@ -159,7 +162,7 @@
         "available_bikes": 10,
         "status": "OPEN",
         "last_update": 1744412308000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 18,
@@ -173,7 +176,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 29,
         "available_bikes": 1,
         "status": "OPEN",
@@ -182,8 +185,8 @@
         "available_bike_stands": 25,
         "available_bikes": 5,
         "status": "OPEN",
-        "last_update": 1744412102000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412511000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 32,
@@ -197,7 +200,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 7,
         "available_bikes": 23,
         "status": "OPEN",
@@ -207,7 +210,7 @@
         "available_bikes": 3,
         "status": "OPEN",
         "last_update": 1744412331000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 52,
@@ -221,17 +224,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 32,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 24,
-        "available_bikes": 8,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 23,
+        "available_bikes": 9,
         "status": "OPEN",
-        "last_update": 1744456308000
+        "last_update": 1744456706000
 ========
         "available_bike_stands": 28,
         "available_bikes": 4,
         "status": "OPEN",
         "last_update": 1744412248000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 48,
@@ -245,17 +248,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 37,
-        "available_bikes": 3,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 38,
+        "available_bikes": 2,
         "status": "OPEN",
-        "last_update": 1744456355000
+        "last_update": 1744456680000
 ========
         "available_bike_stands": 35,
         "available_bikes": 5,
         "status": "OPEN",
-        "last_update": 1744411968000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412395000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 13,
@@ -269,17 +272,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 24,
-        "available_bikes": 6,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 23,
+        "available_bikes": 7,
         "status": "OPEN",
-        "last_update": 1744456352000
+        "last_update": 1744456762000
 ========
         "available_bike_stands": 28,
         "available_bikes": 2,
         "status": "OPEN",
         "last_update": 1744412225000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 43,
@@ -293,17 +296,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 28,
-        "available_bikes": 2,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 25,
+        "available_bikes": 5,
         "status": "OPEN",
-        "last_update": 1744456460000
+        "last_update": 1744456757000
 ========
         "available_bike_stands": 2,
         "available_bikes": 28,
         "status": "OPEN",
-        "last_update": 1744411831000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412429000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 31,
@@ -317,7 +320,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 13,
         "available_bikes": 7,
         "status": "OPEN",
@@ -327,7 +330,7 @@
         "available_bikes": 4,
         "status": "OPEN",
         "last_update": 1744412357000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 98,
@@ -341,17 +344,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 5,
-        "available_bikes": 35,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 4,
+        "available_bikes": 36,
         "status": "OPEN",
-        "last_update": 1744456313000
+        "last_update": 1744456639000
 ========
-        "available_bike_stands": 17,
-        "available_bikes": 23,
+        "available_bike_stands": 18,
+        "available_bikes": 22,
         "status": "OPEN",
-        "last_update": 1744412286000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412491000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 14,
@@ -365,7 +368,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 4,
         "available_bikes": 26,
         "status": "OPEN",
@@ -374,8 +377,8 @@
         "available_bike_stands": 8,
         "available_bikes": 22,
         "status": "OPEN",
-        "last_update": 1744411910000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412479000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 1,
@@ -389,14 +392,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 31,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 6,
         "available_bikes": 25,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
         "last_update": 1744456350000
 ========
+        "available_bike_stands": 31,
+        "available_bikes": 0,
+        "status": "OPEN",
         "last_update": 1744412305000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 23,
@@ -413,11 +419,11 @@
         "available_bike_stands": 0,
         "available_bikes": 30,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456348000
 ========
-        "last_update": 1744411801000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412406000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 106,
@@ -431,17 +437,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 23,
-        "available_bikes": 17,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 25,
+        "available_bikes": 15,
         "status": "OPEN",
-        "last_update": 1744456257000
+        "last_update": 1744456606000
 ========
         "available_bike_stands": 29,
         "available_bikes": 11,
         "status": "OPEN",
-        "last_update": 1744411975000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412578000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 112,
@@ -455,7 +461,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 26,
         "available_bikes": 4,
         "status": "OPEN",
@@ -464,8 +470,8 @@
         "available_bike_stands": 9,
         "available_bikes": 21,
         "status": "OPEN",
-        "last_update": 1744412042000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412419000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 68,
@@ -479,14 +485,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 35,
+        "available_bikes": 5,
+        "status": "OPEN",
+        "last_update": 1744456783000
+========
         "available_bike_stands": 37,
         "available_bikes": 3,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456310000
-========
-        "last_update": 1744411922000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412526000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 74,
@@ -500,17 +509,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
         "available_bike_stands": 24,
         "available_bikes": 6,
         "status": "OPEN",
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456455000
 ========
-        "available_bike_stands": 20,
-        "available_bikes": 10,
-        "status": "OPEN",
         "last_update": 1744412266000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 87,
@@ -524,17 +530,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 38,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 14,
         "available_bikes": 24,
         "status": "OPEN",
         "last_update": 1744456304000
 ========
-        "available_bike_stands": 16,
-        "available_bikes": 22,
+        "available_bike_stands": 15,
+        "available_bikes": 23,
         "status": "OPEN",
-        "last_update": 1744412189000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412630000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 84,
@@ -548,7 +554,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 18,
         "available_bikes": 12,
         "status": "OPEN",
@@ -558,7 +564,7 @@
         "available_bikes": 17,
         "status": "OPEN",
         "last_update": 1744412377000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 90,
@@ -572,14 +578,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-        "available_bike_stands": 37,
-        "available_bikes": 3,
+        "available_bike_stands": 38,
+        "available_bikes": 2,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456430000
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456733000
 ========
-        "last_update": 1744411867000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412496000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 11,
@@ -593,14 +599,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 28,
         "available_bikes": 2,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456169000
+        "last_update": 1744456773000
 ========
+        "available_bike_stands": 30,
+        "available_bikes": 0,
+        "status": "OPEN",
         "last_update": 1744412317000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 17,
@@ -614,17 +623,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 14,
-        "available_bikes": 6,
-        "status": "OPEN",
-        "last_update": 1744456331000
-========
         "available_bike_stands": 17,
         "available_bikes": 3,
         "status": "OPEN",
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456331000
+========
         "last_update": 1744412330000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 45,
@@ -638,17 +644,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 0,
         "available_bikes": 30,
         "status": "OPEN",
-        "last_update": 1744456264000
+        "last_update": 1744456558000
 ========
         "available_bike_stands": 6,
         "available_bikes": 24,
         "status": "OPEN",
         "last_update": 1744412368000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 114,
@@ -662,7 +668,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 37,
         "available_bikes": 3,
         "status": "OPEN",
@@ -671,8 +677,8 @@
         "available_bike_stands": 40,
         "available_bikes": 0,
         "status": "OPEN",
-        "last_update": 1744411871000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412476000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 72,
@@ -686,14 +692,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 31,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 29,
         "available_bikes": 2,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
         "last_update": 1744456477000
 ========
-        "last_update": 1744411900000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "available_bike_stands": 27,
+        "available_bikes": 4,
+        "status": "OPEN",
+        "last_update": 1744412412000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 63,
@@ -707,17 +716,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 35,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 30,
-        "available_bikes": 5,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 28,
+        "available_bikes": 7,
         "status": "OPEN",
-        "last_update": 1744456450000
+        "last_update": 1744456713000
 ========
         "available_bike_stands": 35,
         "available_bikes": 0,
         "status": "OPEN",
         "last_update": 1744412341000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 113,
@@ -731,7 +740,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 21,
         "available_bikes": 19,
         "status": "OPEN",
@@ -741,7 +750,7 @@
         "available_bikes": 18,
         "status": "OPEN",
         "last_update": 1744412342000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 91,
@@ -755,17 +764,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 7,
-        "available_bikes": 23,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 8,
+        "available_bikes": 22,
         "status": "OPEN",
-        "last_update": 1744456349000
+        "last_update": 1744456660000
 ========
         "available_bike_stands": 3,
         "available_bikes": 27,
         "status": "OPEN",
         "last_update": 1744412367000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 99,
@@ -779,7 +788,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 21,
         "available_bikes": 9,
         "status": "OPEN",
@@ -789,7 +798,7 @@
         "available_bikes": 7,
         "status": "OPEN",
         "last_update": 1744412287000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 9,
@@ -803,14 +812,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 24,
-        "available_bike_stands": 12,
-        "available_bikes": 12,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 5,
+        "available_bikes": 19,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456433000
+        "last_update": 1744456539000
 ========
-        "last_update": 1744412138000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "available_bike_stands": 13,
+        "available_bikes": 11,
+        "status": "OPEN",
+        "last_update": 1744412502000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 67,
@@ -824,17 +836,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 29,
         "available_bikes": 11,
         "status": "OPEN",
         "last_update": 1744456338000
 ========
-        "available_bike_stands": 32,
-        "available_bikes": 7,
+        "available_bike_stands": 33,
+        "available_bikes": 6,
         "status": "OPEN",
-        "last_update": 1744412354000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412526000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 116,
@@ -851,11 +863,11 @@
         "available_bike_stands": 29,
         "available_bikes": 1,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456258000
 ========
         "last_update": 1744412099000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 55,
@@ -869,14 +881,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 36,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 33,
         "available_bikes": 3,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
         "last_update": 1744456453000
 ========
+        "available_bike_stands": 35,
+        "available_bikes": 1,
+        "status": "OPEN",
         "last_update": 1744412353000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 62,
@@ -890,7 +905,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 33,
         "available_bikes": 7,
         "status": "OPEN",
@@ -900,7 +915,7 @@
         "available_bikes": 10,
         "status": "OPEN",
         "last_update": 1744412229000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 5,
@@ -914,17 +929,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 30,
         "available_bikes": 10,
         "status": "OPEN",
-        "last_update": 1744456126000
+        "last_update": 1744456525000
 ========
         "available_bike_stands": 15,
         "available_bikes": 25,
         "status": "OPEN",
         "last_update": 1744412314000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 97,
@@ -938,17 +953,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 15,
-        "available_bikes": 25,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 14,
+        "available_bikes": 26,
         "status": "OPEN",
-        "last_update": 1744456332000
+        "last_update": 1744456780000
 ========
         "available_bike_stands": 7,
         "available_bikes": 33,
         "status": "OPEN",
         "last_update": 1744412309000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 61,
@@ -962,14 +977,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 25,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 24,
+        "available_bikes": 1,
+        "status": "OPEN",
+        "last_update": 1744456758000
+========
         "available_bike_stands": 23,
         "available_bikes": 2,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456154000
-========
-        "last_update": 1744412165000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412384000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 77,
@@ -983,14 +1001,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 29,
-        "available_bike_stands": 9,
-        "available_bikes": 20,
+        "available_bike_stands": 10,
+        "available_bikes": 19,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456404000
 ========
-        "last_update": 1744412239000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412552000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 73,
@@ -1004,17 +1022,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 30,
-        "available_bikes": 0,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 29,
+        "available_bikes": 1,
         "status": "OPEN",
-        "last_update": 1744456422000
+        "last_update": 1744456618000
 ========
         "available_bike_stands": 28,
         "available_bikes": 2,
         "status": "OPEN",
-        "last_update": 1744412051000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412432000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 4,
@@ -1028,17 +1046,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 1,
-        "available_bikes": 19,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 4,
+        "available_bikes": 16,
         "status": "OPEN",
-        "last_update": 1744456370000
+        "last_update": 1744456678000
 ========
         "available_bike_stands": 7,
         "available_bikes": 13,
         "status": "OPEN",
-        "last_update": 1744411845000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412449000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 49,
@@ -1052,17 +1070,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 32,
-        "available_bikes": 8,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 34,
+        "available_bikes": 6,
         "status": "OPEN",
-        "last_update": 1744456411000
+        "last_update": 1744456763000
 ========
-        "available_bike_stands": 39,
-        "available_bikes": 1,
+        "available_bike_stands": 38,
+        "available_bikes": 2,
         "status": "OPEN",
-        "last_update": 1744412203000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412480000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 19,
@@ -1076,14 +1094,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 21,
         "available_bikes": 9,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
         "last_update": 1744456428000
 ========
-        "last_update": 1744411984000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "available_bike_stands": 28,
+        "available_bikes": 2,
+        "status": "OPEN",
+        "last_update": 1744412597000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 7,
@@ -1097,7 +1118,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 29,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 28,
         "available_bikes": 1,
         "status": "OPEN",
@@ -1106,8 +1127,8 @@
         "available_bike_stands": 27,
         "available_bikes": 2,
         "status": "OPEN",
-        "last_update": 1744411785000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412390000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 60,
@@ -1121,17 +1142,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 30,
         "available_bikes": 0,
         "status": "OPEN",
         "last_update": 1744456461000
 ========
-        "available_bike_stands": 18,
-        "available_bikes": 12,
+        "available_bike_stands": 17,
+        "available_bikes": 13,
         "status": "OPEN",
-        "last_update": 1744411841000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412638000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 102,
@@ -1145,7 +1166,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 40,
         "available_bikes": 0,
         "status": "OPEN",
@@ -1155,7 +1176,7 @@
         "available_bikes": 12,
         "status": "OPEN",
         "last_update": 1744412316000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 38,
@@ -1169,7 +1190,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 1,
         "available_bikes": 39,
         "status": "OPEN",
@@ -1178,8 +1199,8 @@
         "available_bike_stands": 3,
         "available_bikes": 37,
         "status": "OPEN",
-        "last_update": 1744411871000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412476000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 53,
@@ -1193,7 +1214,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 28,
         "available_bikes": 12,
         "status": "OPEN",
@@ -1202,8 +1223,8 @@
         "available_bike_stands": 29,
         "available_bikes": 11,
         "status": "OPEN",
-        "last_update": 1744411793000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412398000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 58,
@@ -1217,17 +1238,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 3,
-        "available_bikes": 37,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 2,
+        "available_bikes": 38,
         "status": "OPEN",
-        "last_update": 1744456382000
+        "last_update": 1744456576000
 ========
         "available_bike_stands": 22,
         "available_bikes": 18,
         "status": "OPEN",
         "last_update": 1744412342000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 66,
@@ -1241,17 +1262,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 39,
-        "available_bikes": 1,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 40,
+        "available_bikes": 0,
         "status": "OPEN",
-        "last_update": 1744456469000
+        "last_update": 1744456509000
 ========
-        "available_bike_stands": 21,
-        "available_bikes": 19,
+        "available_bike_stands": 19,
+        "available_bikes": 21,
         "status": "OPEN",
-        "last_update": 1744412281000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412546000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 104,
@@ -1268,11 +1289,11 @@
         "available_bike_stands": 40,
         "available_bikes": 0,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456290000
 ========
         "last_update": 1744412374000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 101,
@@ -1286,7 +1307,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 27,
         "available_bikes": 3,
         "status": "OPEN",
@@ -1296,7 +1317,7 @@
         "available_bikes": 10,
         "status": "OPEN",
         "last_update": 1744412232000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 115,
@@ -1310,17 +1331,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 16,
         "available_bikes": 14,
         "status": "OPEN",
         "last_update": 1744456453000
 ========
-        "available_bike_stands": 9,
-        "available_bikes": 21,
+        "available_bike_stands": 10,
+        "available_bikes": 20,
         "status": "OPEN",
-        "last_update": 1744411897000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412503000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 47,
@@ -1334,14 +1355,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-        "available_bike_stands": 38,
-        "available_bikes": 2,
+        "available_bike_stands": 40,
+        "available_bikes": 0,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456256000
 ========
         "last_update": 1744412193000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 117,
@@ -1358,11 +1379,11 @@
         "available_bike_stands": 40,
         "available_bikes": 0,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456305000
 ========
         "last_update": 1744412176000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 8,
@@ -1376,7 +1397,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 2,
         "available_bikes": 28,
         "status": "OPEN",
@@ -1385,8 +1406,8 @@
         "available_bike_stands": 14,
         "available_bikes": 16,
         "status": "OPEN",
-        "last_update": 1744411878000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412483000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 27,
@@ -1400,17 +1421,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 0,
-        "available_bikes": 20,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 1,
+        "available_bikes": 19,
         "status": "OPEN",
-        "last_update": 1744456216000
+        "last_update": 1744456572000
 ========
-        "available_bike_stands": 3,
-        "available_bikes": 17,
+        "available_bike_stands": 4,
+        "available_bikes": 16,
         "status": "OPEN",
-        "last_update": 1744412028000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412463000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 16,
@@ -1427,11 +1448,11 @@
         "available_bike_stands": 1,
         "available_bikes": 19,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456242000
 ========
         "last_update": 1744412174000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 96,
@@ -1445,17 +1466,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 27,
-        "available_bikes": 3,
-        "status": "OPEN",
-        "last_update": 1744456300000
-========
         "available_bike_stands": 20,
         "available_bikes": 10,
         "status": "OPEN",
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456300000
+========
         "last_update": 1744412121000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 82,
@@ -1469,7 +1487,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 22,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 22,
         "available_bikes": 0,
         "status": "OPEN",
@@ -1479,7 +1497,7 @@
         "available_bikes": 2,
         "status": "OPEN",
         "last_update": 1744412172000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 76,
@@ -1493,7 +1511,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 38,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 34,
         "available_bikes": 4,
         "status": "OPEN",
@@ -1502,8 +1520,8 @@
         "available_bike_stands": 32,
         "available_bikes": 6,
         "status": "OPEN",
-        "last_update": 1744412045000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412648000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 71,
@@ -1517,17 +1535,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 33,
         "available_bikes": 7,
         "status": "OPEN",
-        "last_update": 1744456215000
+        "last_update": 1744456730000
 ========
-        "available_bike_stands": 31,
-        "available_bikes": 9,
+        "available_bike_stands": 30,
+        "available_bikes": 10,
         "status": "OPEN",
-        "last_update": 1744412378000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412547000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 79,
@@ -1541,7 +1559,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 27,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 24,
         "available_bikes": 3,
         "status": "OPEN",
@@ -1550,8 +1568,8 @@
         "available_bike_stands": 22,
         "available_bikes": 5,
         "status": "OPEN",
-        "last_update": 1744411787000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412391000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 69,
@@ -1565,17 +1583,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 23,
-        "available_bikes": 17,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 21,
+        "available_bikes": 19,
         "status": "OPEN",
-        "last_update": 1744456443000
+        "last_update": 1744456780000
 ========
         "available_bike_stands": 37,
         "available_bikes": 3,
         "status": "OPEN",
-        "last_update": 1744412319000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412592000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 25,
@@ -1589,7 +1607,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 27,
         "available_bikes": 3,
         "status": "OPEN",
@@ -1598,8 +1616,8 @@
         "available_bike_stands": 30,
         "available_bikes": 0,
         "status": "OPEN",
-        "last_update": 1744411782000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412386000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 51,
@@ -1616,11 +1634,11 @@
         "available_bike_stands": 0,
         "available_bikes": 0,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456259000
 ========
-        "last_update": 1744412056000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412661000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 37,
@@ -1634,7 +1652,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 13,
         "available_bikes": 17,
         "status": "OPEN",
@@ -1644,7 +1662,7 @@
         "available_bikes": 12,
         "status": "OPEN",
         "last_update": 1744412259000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 59,
@@ -1658,7 +1676,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 20,
         "available_bikes": 0,
         "status": "OPEN",
@@ -1667,8 +1685,8 @@
         "available_bike_stands": 18,
         "available_bikes": 2,
         "status": "OPEN",
-        "last_update": 1744411797000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412402000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 95,
@@ -1682,7 +1700,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 24,
         "available_bikes": 16,
         "status": "OPEN",
@@ -1691,8 +1709,8 @@
         "available_bike_stands": 18,
         "available_bikes": 22,
         "status": "OPEN",
-        "last_update": 1744411919000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412525000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 94,
@@ -1709,11 +1727,11 @@
         "available_bike_stands": 19,
         "available_bikes": 21,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456352000
 ========
-        "last_update": 1744411779000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412385000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 105,
@@ -1727,14 +1745,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 36,
-        "available_bike_stands": 36,
-        "available_bikes": 0,
+        "available_bike_stands": 32,
+        "available_bikes": 4,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456444000
 ========
-        "last_update": 1744411826000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412431000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 36,
@@ -1751,11 +1769,11 @@
         "available_bike_stands": 25,
         "available_bikes": 15,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456334000
 ========
         "last_update": 1744412190000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 93,
@@ -1769,7 +1787,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 4,
         "available_bikes": 36,
         "status": "OPEN",
@@ -1779,7 +1797,7 @@
         "available_bikes": 34,
         "status": "OPEN",
         "last_update": 1744412340000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 22,
@@ -1793,17 +1811,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 0,
-        "available_bikes": 20,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 1,
+        "available_bikes": 19,
         "status": "OPEN",
-        "last_update": 1744456254000
+        "last_update": 1744456702000
 ========
         "available_bike_stands": 5,
         "available_bikes": 15,
         "status": "OPEN",
         "last_update": 1744412355000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 50,
@@ -1817,17 +1835,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 35,
-        "available_bikes": 5,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 36,
+        "available_bikes": 4,
         "status": "OPEN",
-        "last_update": 1744455899000
+        "last_update": 1744456506000
 ========
-        "available_bike_stands": 29,
-        "available_bikes": 11,
+        "available_bike_stands": 28,
+        "available_bikes": 12,
         "status": "OPEN",
-        "last_update": 1744411871000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412541000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 110,
@@ -1841,7 +1859,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 40,
         "available_bikes": 0,
         "status": "OPEN",
@@ -1851,7 +1869,7 @@
         "available_bikes": 6,
         "status": "OPEN",
         "last_update": 1744412358000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 12,
@@ -1865,7 +1883,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 19,
         "available_bikes": 1,
         "status": "OPEN",
@@ -1875,7 +1893,7 @@
         "available_bikes": 4,
         "status": "OPEN",
         "last_update": 1744412258000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 34,
@@ -1889,17 +1907,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 11,
-        "available_bikes": 19,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 9,
+        "available_bikes": 21,
         "status": "OPEN",
-        "last_update": 1744456358000
+        "last_update": 1744456764000
 ========
         "available_bike_stands": 5,
         "available_bikes": 25,
         "status": "OPEN",
-        "last_update": 1744412168000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412491000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 78,
@@ -1913,7 +1931,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 37,
         "available_bikes": 3,
         "status": "OPEN",
@@ -1922,8 +1940,8 @@
         "available_bike_stands": 29,
         "available_bikes": 11,
         "status": "OPEN",
-        "last_update": 1744411782000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412387000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 2,
@@ -1937,17 +1955,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 20,
         "available_bikes": 0,
         "status": "OPEN",
         "last_update": 1744456255000
 ========
-        "available_bike_stands": 17,
-        "available_bikes": 3,
+        "available_bike_stands": 16,
+        "available_bikes": 4,
         "status": "OPEN",
-        "last_update": 1744412175000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412523000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 75,
@@ -1961,17 +1979,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 34,
-        "available_bikes": 6,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 36,
+        "available_bikes": 4,
         "status": "OPEN",
-        "last_update": 1744456443000
+        "last_update": 1744456697000
 ========
-        "available_bike_stands": 30,
-        "available_bikes": 10,
+        "available_bike_stands": 29,
+        "available_bikes": 11,
         "status": "OPEN",
-        "last_update": 1744412349000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412549000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 111,
@@ -1985,17 +2003,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 38,
-        "available_bikes": 2,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 37,
+        "available_bikes": 3,
         "status": "OPEN",
-        "last_update": 1744456181000
+        "last_update": 1744456519000
 ========
         "available_bike_stands": 31,
         "available_bikes": 9,
         "status": "OPEN",
         "last_update": 1744412289000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 26,
@@ -2009,7 +2027,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 0,
         "available_bikes": 20,
         "status": "OPEN",
@@ -2018,8 +2036,8 @@
         "available_bike_stands": 10,
         "available_bikes": 10,
         "status": "OPEN",
-        "last_update": 1744412062000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412665000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 65,
@@ -2033,14 +2051,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-        "available_bike_stands": 39,
-        "available_bikes": 1,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 38,
+        "available_bikes": 2,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456039000
+        "last_update": 1744456644000
 ========
-        "last_update": 1744412056000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "available_bike_stands": 40,
+        "available_bikes": 0,
+        "status": "OPEN",
+        "last_update": 1744412666000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 15,
@@ -2054,17 +2075,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 16,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 16,
-        "available_bikes": 0,
-        "status": "OPEN",
-        "last_update": 1744456451000
-========
         "available_bike_stands": 11,
         "available_bikes": 5,
         "status": "OPEN",
-        "last_update": 1744411787000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456451000
+========
+        "last_update": 1744412391000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 86,
@@ -2078,17 +2096,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 38,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 1,
         "available_bikes": 37,
         "status": "OPEN",
-        "last_update": 1744456314000
+        "last_update": 1744456702000
 ========
         "available_bike_stands": 0,
         "available_bikes": 38,
         "status": "OPEN",
         "last_update": 1744412213000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 35,
@@ -2102,17 +2120,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 6,
         "available_bikes": 24,
         "status": "OPEN",
-        "last_update": 1744456260000
+        "last_update": 1744456495000
 ========
         "available_bike_stands": 2,
         "available_bikes": 28,
         "status": "OPEN",
-        "last_update": 1744411929000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412534000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 10,
@@ -2129,11 +2147,11 @@
         "available_bike_stands": 0,
         "available_bikes": 16,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456352000
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456515000
 ========
-        "last_update": 1744411798000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412401000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 100,
@@ -2147,17 +2165,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 25,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 6,
         "available_bikes": 19,
         "status": "OPEN",
-        "last_update": 1744456101000
+        "last_update": 1744456506000
 ========
         "available_bike_stands": 2,
         "available_bikes": 23,
         "status": "OPEN",
-        "last_update": 1744412372000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412498000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 24,
@@ -2171,17 +2189,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 7,
         "available_bikes": 12,
         "status": "OPEN",
-        "last_update": 1744456468000
+        "last_update": 1744456715000
 ========
         "available_bike_stands": 1,
         "available_bikes": 19,
         "status": "OPEN",
-        "last_update": 1744412041000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412497000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 64,
@@ -2195,17 +2213,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 22,
-        "available_bikes": 18,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 33,
+        "available_bikes": 7,
         "status": "OPEN",
-        "last_update": 1744456331000
+        "last_update": 1744456647000
 ========
         "available_bike_stands": 31,
         "available_bikes": 9,
         "status": "OPEN",
-        "last_update": 1744412044000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412490000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 109,
@@ -2219,7 +2237,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 29,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 19,
         "available_bikes": 10,
         "status": "OPEN",
@@ -2229,7 +2247,7 @@
         "available_bikes": 14,
         "status": "OPEN",
         "last_update": 1744412334000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 85,
@@ -2246,11 +2264,11 @@
         "available_bike_stands": 17,
         "available_bikes": 18,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "last_update": 1744456420000
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456641000
 ========
         "last_update": 1744412324000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 107,
@@ -2264,7 +2282,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 40,
         "available_bikes": 0,
         "status": "OPEN",
@@ -2273,8 +2291,8 @@
         "available_bike_stands": 32,
         "available_bikes": 8,
         "status": "OPEN",
-        "last_update": 1744411892000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412497000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 33,
@@ -2288,17 +2306,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 23,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 7,
-        "available_bikes": 16,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 5,
+        "available_bikes": 18,
         "status": "OPEN",
-        "last_update": 1744456455000
+        "last_update": 1744456652000
 ========
-        "available_bike_stands": 13,
-        "available_bikes": 10,
+        "available_bike_stands": 12,
+        "available_bikes": 11,
         "status": "OPEN",
-        "last_update": 1744412297000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412491000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 44,
@@ -2312,7 +2330,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 19,
         "available_bikes": 11,
         "status": "OPEN",
@@ -2322,7 +2340,7 @@
         "available_bikes": 29,
         "status": "OPEN",
         "last_update": 1744412287000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 89,
@@ -2339,11 +2357,11 @@
         "available_bike_stands": 39,
         "available_bikes": 1,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456385000
 ========
         "last_update": 1744412257000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 57,
@@ -2357,7 +2375,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 23,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 12,
         "available_bikes": 11,
         "status": "OPEN",
@@ -2367,7 +2385,7 @@
         "available_bikes": 12,
         "status": "OPEN",
         "last_update": 1744412333000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 80,
@@ -2381,17 +2399,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 40,
         "available_bikes": 0,
         "status": "OPEN",
-        "last_update": 1744455987000
+        "last_update": 1744456592000
 ========
         "available_bike_stands": 37,
         "available_bikes": 3,
         "status": "OPEN",
-        "last_update": 1744411801000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412405000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 41,
@@ -2405,7 +2423,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 8,
         "available_bikes": 12,
         "status": "OPEN",
@@ -2415,7 +2433,7 @@
         "available_bikes": 13,
         "status": "OPEN",
         "last_update": 1744412211000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 3,
@@ -2432,11 +2450,11 @@
         "available_bike_stands": 20,
         "available_bikes": 0,
         "status": "OPEN",
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "last_update": 1744456334000
 ========
         "last_update": 1744412343000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 40,
@@ -2450,17 +2468,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 21,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 4,
-        "available_bikes": 16,
+        "available_bike_stands": 7,
+        "available_bikes": 13,
         "status": "OPEN",
-        "last_update": 1744456469000
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456710000
 ========
-        "available_bike_stands": 6,
-        "available_bikes": 14,
-        "status": "OPEN",
-        "last_update": 1744412043000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412649000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 29,
@@ -2474,17 +2489,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 29,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 7,
-        "available_bikes": 22,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 6,
+        "available_bikes": 23,
         "status": "OPEN",
-        "last_update": 1744456447000
+        "last_update": 1744456636000
 ========
-        "available_bike_stands": 9,
-        "available_bikes": 19,
+        "available_bike_stands": 8,
+        "available_bikes": 20,
         "status": "OPEN",
-        "last_update": 1744412099000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412535000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 103,
@@ -2498,17 +2513,14 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
         "available_bike_stands": 39,
         "available_bikes": 1,
         "status": "OPEN",
-        "last_update": 1744455878000
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "last_update": 1744456483000
 ========
-        "available_bike_stands": 40,
-        "available_bikes": 0,
-        "status": "OPEN",
         "last_update": 1744412166000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 28,
@@ -2522,17 +2534,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 30,
-        "available_bikes": 0,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 29,
+        "available_bikes": 1,
         "status": "OPEN",
-        "last_update": 1744456376000
+        "last_update": 1744456610000
 ========
         "available_bike_stands": 17,
         "available_bikes": 13,
         "status": "OPEN",
         "last_update": 1744412282000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 39,
@@ -2546,7 +2558,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 20,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 8,
         "available_bikes": 12,
         "status": "OPEN",
@@ -2556,7 +2568,7 @@
         "available_bikes": 15,
         "status": "OPEN",
         "last_update": 1744412240000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 83,
@@ -2570,7 +2582,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 16,
         "available_bikes": 24,
         "status": "OPEN",
@@ -2579,8 +2591,8 @@
         "available_bike_stands": 12,
         "available_bikes": 28,
         "status": "OPEN",
-        "last_update": 1744412316000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+        "last_update": 1744412392000
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 92,
@@ -2594,7 +2606,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 40,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 3,
         "available_bikes": 37,
         "status": "OPEN",
@@ -2604,7 +2616,7 @@
         "available_bikes": 39,
         "status": "OPEN",
         "last_update": 1744412311000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 21,
@@ -2618,17 +2630,17 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
-        "available_bike_stands": 2,
-        "available_bikes": 28,
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
+        "available_bike_stands": 1,
+        "available_bikes": 29,
         "status": "OPEN",
-        "last_update": 1744456473000
+        "last_update": 1744456701000
 ========
         "available_bike_stands": 18,
         "available_bikes": 12,
         "status": "OPEN",
         "last_update": 1744412293000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     },
     {
         "number": 88,
@@ -2642,7 +2654,7 @@
         "banking": false,
         "bonus": false,
         "bike_stands": 30,
-<<<<<<<< HEAD:bike_data_2025-04-12_12-14-44.json
+<<<<<<<< HEAD:bike_data_2025-04-12_12-19-45.json
         "available_bike_stands": 10,
         "available_bikes": 20,
         "status": "OPEN",
@@ -2652,6 +2664,6 @@
         "available_bikes": 27,
         "status": "OPEN",
         "last_update": 1744412322000
->>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-11_23-59-58.json
+>>>>>>>> 6f0b6df (Updated ml model):bike_data_2025-04-12_00-05-11.json
     }
 ]
