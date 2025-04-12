@@ -234,6 +234,8 @@ def get_locations():
     filtered_locations = []
     for loc in locations:
         location_data = {
+            # to work with the ML model I added the numeric station ID from the API
+            "id": loc.get("number"),
             "name": loc["name"],
             "position": {
                 "lat": loc["position"]["lat"],
@@ -257,7 +259,15 @@ def purchase():
     return render_template("purchase.html")
 
 # 1) Load your pickle model
-MODEL_PATH = "D:/UCD/Software Engineering/Source_Code_ML/bike_station_avg_model.pkl"
+
+# changed the loading file to be a bit more robust
+# Determine the current directory of the app.py file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# This constructs the full path to our model file
+MODEL_PATH = os.path.join(BASE_DIR, "bike_station_avg_model.pkl")
+
+# This will load the pickle model using the constructed file path
 with open(MODEL_PATH, "rb") as file:
     model = pickle.load(file)
 
@@ -367,7 +377,9 @@ def predict_bike_availability_route():
             minute=minute
         )
 
-        return jsonify({"predicted_bikes": predicted_value})
+        #changed it a little so the user could see the prediction to the nearest whole number
+        rounded_value = round(predicted_value)
+        return jsonify({"predicted_bikes": rounded_value})
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
