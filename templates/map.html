@@ -34,34 +34,75 @@
         <div id="weather-bar">
             Loading Dublin weather...
         </div>
-
+    
         <h2 class="page-title">Dublin Bike Stations Map</h2>
-
+    
         <input id="search-box" type="text" placeholder="Search for places in Dublin...">
-        
-        <button onclick="toggleBikeLayer()" 
-        style="padding: 8px; margin: 10px; cursor: pointer;">
+    
+        <button onclick="toggleBikeLayer()" style="padding: 8px; margin: 10px; cursor: pointer;">
             Toggle Bicycling Layer
         </button>
-
-        <div id="map"></div>
-        <div class="legend">
-            <h4 style="margin: 0 0 8px 0">Bike Availability</h4>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: green"></div>
-                <span>High (>66%)</span>
+    
+        <!-- Map Section -->
+        <div class="map-wrapper">
+            <div id="map"></div>
+        </div>
+    
+        <!-- Toggle Button -->
+        <button id="show-predictions" style="display: none;">Show Predictions</button>
+    
+        <!-- Combined side-by-side panel for legend + prediction -->
+        <div class="bottom-panel">
+            <!-- Legend -->
+            <div class="legend">
+                <h4>Bike Availability</h4>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: green"></div>
+                    <span>High (&gt;66%)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: orange"></div>
+                    <span>Medium (33–66%)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: red"></div>
+                    <span>Low (&lt;33%)</span>
+                </div>
             </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: orange"></div>
-                <span>Medium (33-66%)</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background-color: red"></div>
-                <span>Low (<33%)</span>
+    
+            <!-- Prediction Panel -->
+            <div id="prediction-panel" style="display: block;">
+                <button class="toggle-btn" aria-label="Hide Predictions">&times;</button>
+                <h3>Bike Availability Prediction</h3>
+                <form id="prediction-form">
+                    <label for="station_id">Station ID:</label>
+                    <input type="number" id="station_id" name="station_id" required>
+    
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" value="Dublin" required>
+    
+                    <label for="year">Year:</label>
+                    <input type="number" id="year" name="year" value="2024" required>
+    
+                    <label for="month">Month:</label>
+                    <input type="number" id="month" name="month" value="1" required>
+    
+                    <label for="day">Day:</label>
+                    <input type="number" id="day" name="day" value="1" required>
+    
+                    <label for="hour">Hour:</label>
+                    <input type="number" id="hour" name="hour" value="12" required>
+    
+                    <label for="minute">Minute:</label>
+                    <input type="number" id="minute" name="minute" value="0" required>
+    
+                    <button type="submit">Predict</button>
+                </form>
+                <div id="predicted-bikes"></div>
             </div>
         </div>
-
     </div>
+
 
     <!-- Footer -->
     <footer id="footer">
@@ -92,6 +133,7 @@
             </a>
         </div>
     </footer>
-    
+    <!-- This is the separate prediction JS file -->
+    <script src="{{ url_for('static', filename='js/prediction.js') }}"></script>
 </body>
 </html> 
