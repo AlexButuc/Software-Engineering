@@ -672,8 +672,7 @@ def predict_bike_availability_route():
             return jsonify({"error": "One or more required parameters are missing"}), 400
 
         predicted_value = predict_bike_availability(
-            station_id=station_id,  
-            station_id=station_id,  
+            station_id=station_id, 
             city=city,
             year=year,
             month=month,
