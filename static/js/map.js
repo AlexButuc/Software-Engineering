@@ -84,6 +84,9 @@ function updateMapData() {
                     }
                 });
 
+                // This stores the numeric station ID on the marker
+                marker.stationId = location.id;
+
                 // Optional: Add a Google Street View Static Image for each station
                 // (Requires that the same API key has Street View Static API enabled)
                 const streetViewImageUrl = `
@@ -97,6 +100,7 @@ function updateMapData() {
                         <h3>${location.name}</h3>
                         
                         <!-- Display the optional Street View image -->
+                        <p><strong>Station ID:</strong> ${location.id}</p>
                         <img src="${streetViewImageUrl}" 
                              alt="Street View" 
                              style="width:120px;height:auto;margin:5px 0;">
@@ -122,6 +126,11 @@ function updateMapData() {
                 marker.addListener('click', function() {
                     infoWindow.setContent(infoWindowContent);
                     infoWindow.open(map, marker);
+                    // this will auto-fill the prediction forms station id field
+                    const stationIdInput = document.getElementById('station_id');
+                    if (stationIdInput) {
+                        stationIdInput.value = marker.stationId;
+                    }
                 });
 
                 // Keep track of the marker in our markers array
