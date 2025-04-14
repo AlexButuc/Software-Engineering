@@ -1,9 +1,7 @@
 import requests
 from datetime import datetime
 import os
-
-# The ``API key
-OPENWEATHER_API_KEY = "0c6e82fcf592941a58ea878933d06911"
+from config import OPENWEATHER_API_KEY
 
 class WeatherService:
     def __init__(self):

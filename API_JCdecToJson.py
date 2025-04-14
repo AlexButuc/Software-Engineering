@@ -2,11 +2,10 @@ import requests
 import time
 import json
 from datetime import datetime
+from config import JCDECAUX_API_KEY, JCDECAUX_CONTRACT_NAME
 
 # API
-API_KEY = "64bac24f3e0daee76a46c131c8641d1c4d92ac99"
-CONTRACT_NAME = "Dublin"
-url = f"https://api.jcdecaux.com/vls/v1/stations?contract={CONTRACT_NAME}&apiKey={API_KEY}"
+url = f"https://api.jcdecaux.com/vls/v1/stations?contract={JCDECAUX_CONTRACT_NAME}&apiKey={JCDECAUX_API_KEY}"
 
 # function to extract satation info (Capacity and available docks)
 def extract_station_info(station):
