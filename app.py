@@ -294,4 +294,4 @@ if __name__ == '__main__':
     print(f"Station 110: capacity = {cap}, available docks = {docks}")
 
     os.makedirs('static/images', exist_ok=True)
-    app.run(host="0.0.0.0", port=8080, debug=False)
+    app.run(host="0.0.0.0", port=80, debug=False)
