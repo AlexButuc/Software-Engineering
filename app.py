@@ -275,6 +275,7 @@ import pandas as pd
 import numpy as np
 
 from weather_service import WeatherService
+from occupancy_forecast import load_model, forecast_occupancy
 
 app = Flask(__name__)
 weather_service = WeatherService()
@@ -387,7 +388,7 @@ def purchase():
     return render_template("purchase.html")
 
 # 1) Load your trained model
-MODEL_PATH = "D:/UCD/Software Engineering/Source_Code_ML/bike_station_avg_model.pkl"
+MODEL_PATH = "D:/UCD/Github/Software-Engineering/bike_station_rf_model.pkl" 
 with open(MODEL_PATH, "rb") as file:
     model = pickle.load(file)
 print("[DEBUG] Loaded ML model")
@@ -447,7 +448,7 @@ def get_station_info(station_id):
     print(f"[DEBUG] Station info not found for station_id {station_id}")
     return None, None
 
-# 4) Prediction function: use live station data and weather to create input for the model
+# 5) Prediction function: use live station data and weather to create input for the model
 def predict_bike_availability(station_id, city, year, month, day, hour, minute):
     date_str_ymd = f"{year:04d}-{month:02d}-{day:02d}"
     time_str_hm = f"{hour:02d}:{minute:02d}"
@@ -465,11 +466,18 @@ def predict_bike_availability(station_id, city, year, month, day, hour, minute):
             raise Exception(f"Station info not available for station_id {station_id}.")
         print(f"[DEBUG] Using live occupancy data for station {station_id}")
     else:
-        capacity = avg_capacity.get(station_id)
-        num_docks_available = avg_docks.get(station_id)
-        if capacity is None or num_docks_available is None:
-            raise Exception(f"Historical averages not available for station {station_id}.")
-        print(f"[DEBUG] Using historical occupancy averages for station {station_id}")
+         # For future dates, use dynamic occupancy forecast.
+        try:
+            occupancy_model = load_model(station_id)
+            forecasted_occupancy = forecast_occupancy(occupancy_model, dt)
+            capacity = avg_capacity.get(station_id)  # Assume capacity remains constant over time.
+            num_docks_available = forecasted_occupancy
+            print(f"[DEBUG] Using dynamic occupancy forecast for station {station_id}")
+        except Exception as e:
+            # Fallback to historical averages
+            capacity = avg_capacity.get(station_id)
+            num_docks_available = avg_docks.get(station_id)
+            print(f"[DEBUG] Using historical occupancy averages for station {station_id} due to error: {e}")
     
     day_of_week = dt.weekday()
     
@@ -477,9 +485,8 @@ def predict_bike_availability(station_id, city, year, month, day, hour, minute):
     input_data = pd.DataFrame([{
         'station_id': station_id,
         'year': dt.year,
-        'month': dt.month,
-        # 'day': dt.day,
-        'hour': dt.hour,
+        # 'month': dt.month,
+        # 'hour': dt.hour,
         'day_of_week': day_of_week,
         'num_docks_available': num_docks_available,
         'capacity': capacity,
@@ -488,7 +495,6 @@ def predict_bike_availability(station_id, city, year, month, day, hour, minute):
     }])
 
     print(f"[DEBUG] Input data for prediction:\n{input_data}")
-    
     prediction = model.predict(input_data)
     return float(prediction[0])
 
@@ -500,12 +506,12 @@ def predict_bike_availability_route():
     """
     try:
         station_id = request.args.get("station_id", type=int)
-        city       = request.args.get("city", default="Dublin")
-        year       = request.args.get("year", type=int)
-        month      = request.args.get("month", type=int)
-        day        = request.args.get("day", type=int)
-        hour       = request.args.get("hour", type=int)
-        minute     = request.args.get("minute", type=int)
+        city = request.args.get("city", default="Dublin")
+        year = request.args.get("year", type=int)
+        month = request.args.get("month", type=int)
+        day = request.args.get("day", type=int)
+        hour = request.args.get("hour", type=int)
+        minute = request.args.get("minute", type=int)
 
         if None in [station_id, year, month, day, hour, minute]:
             return jsonify({"error": "One or more required parameters are missing"}), 400
