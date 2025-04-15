@@ -272,6 +272,7 @@ import time
 
 import pickle  # for loading your model
 import pandas as pd
+import numpy as np
 
 from weather_service import WeatherService
 
