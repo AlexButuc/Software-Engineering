@@ -29,7 +29,7 @@ A real-time web application that displays Dublin's bike sharing stations with li
 ├── static/            # Static assets
 ├── templates/         # HTML templates
 └── *.json            # Bike data files
-└── Machine Learning / # Machine Learning files
+└── ml_model / # Machine Learning files
 ```
 
 ## Setup and Installation
@@ -39,7 +39,7 @@ A real-time web application that displays Dublin's bike sharing stations with li
    ```
    pip install flask requests
    ```
-3. Set up your API keys:
+3. Set up your API keys in the config.py (left in for purpose of assignment, usually would not be there as it is not best practice.):
    - JCDecaux API key
    - OpenWeather API key
    - Google Maps API key
@@ -49,7 +49,7 @@ A real-time web application that displays Dublin's bike sharing stations with li
    python app.py
    ```
 
-The application should be available at `http://localhost:8080`
+The application should be available at `http://localhost:80` or whatever ip you use.
 
 ## API Endpoints
 
