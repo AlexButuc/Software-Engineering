@@ -9,14 +9,15 @@ import time
 
 import pickle  # for loading your model
 import pandas as pd
+import numpy as np
 
 from weather_service import WeatherService
 from config import JCDECAUX_API_KEY, JCDECAUX_CONTRACT_NAME, GOOGLE_MAPS_API_KEY
+from occupancy_forecast import load_model, forecast_occupancy
 
 app = Flask(__name__)
 weather_service = WeatherService()
 
-# Global variable to store bike locations (from JCDecaux)
 # Global variable to store bike locations (from JCDecaux)
 locations = []
 
@@ -46,7 +47,6 @@ def load_bike_data():
         with open(newest_file, "r") as file:
             locations = json.load(file)
         print(f"[DEBUG] Loaded bike data from {newest_file}")
-        print(f"[DEBUG] Loaded bike data from {newest_file}")
 
 def fetch_and_save_bike_data():
     url = f"https://api.jcdecaux.com/vls/v1/stations?contract={JCDECAUX_CONTRACT_NAME}&apiKey={JCDECAUX_API_KEY}"
@@ -64,7 +64,6 @@ def fetch_and_save_bike_data():
                 
                 global locations
                 locations = data
-                print(f"[DEBUG] Updated bike data at {timestamp}")
                 print(f"[DEBUG] Updated bike data at {timestamp}")
                 
                 cleanup_old_files()
@@ -140,8 +139,9 @@ with open(MODEL_PATH, "rb") as file:
     model = pickle.load(file)
 print("[DEBUG] Loaded ML model")
 
-# 2) Load historical average dictionaries for occupancy (Approach 2)
+# 2) Load historical average dictionaries for occupancy
 # These files were saved during training.
+
 with open("avg_docks.pkl", "rb") as f:
     avg_docks = pickle.load(f)
 with open("avg_capacity.pkl", "rb") as f:
@@ -153,8 +153,7 @@ def get_weather_forecast(city, date_str):
     """
     Fetch current weather data for the given city.
     Returns a dictionary with keys 'temperature' and 'humidity'.
-    Fetch current weather data for the given city.
-    Returns a dictionary with keys 'temperature' and 'humidity'.
+    
     """
     try:
         url = "http://api.openweathermap.org/data/2.5/weather"
@@ -166,10 +165,7 @@ def get_weather_forecast(city, date_str):
         resp = requests.get(url, params=params)
         resp.raise_for_status()
         data = resp.json()
-        # Debug the raw weather data
-        print(f"[DEBUG] Raw weather data for {city}: {data}")
-        temperature = data['main']['temp']
-        humidity    = data['main']['humidity']
+
         # Debug the raw weather data
         print(f"[DEBUG] Raw weather data for {city}: {data}")
         temperature = data['main']['temp']
@@ -201,13 +197,12 @@ def get_station_info(station_id):
     print(f"[DEBUG] Station info not found for station_id {station_id}")
     return None, None
 
-# 4) Prediction function: use live station data and weather to create input for the model
+# 5) Prediction function: use live station data and weather to create input for the model
 def predict_bike_availability(station_id, city, year, month, day, hour, minute):
     date_str_ymd = f"{year:04d}-{month:02d}-{day:02d}"
     time_str_hm = f"{hour:02d}:{minute:02d}"
     dt = datetime.strptime(f"{date_str_ymd} {time_str_hm}", "%Y-%m-%d %H:%M")
 
-    # Get current weather data
     # Get current weather data
     weather_features = get_weather_forecast(city, date_str_ymd)
     if weather_features is None:
@@ -220,11 +215,18 @@ def predict_bike_availability(station_id, city, year, month, day, hour, minute):
             raise Exception(f"Station info not available for station_id {station_id}.")
         print(f"[DEBUG] Using live occupancy data for station {station_id}")
     else:
-        capacity = avg_capacity.get(station_id)
-        num_docks_available = avg_docks.get(station_id)
-        if capacity is None or num_docks_available is None:
-            raise Exception(f"Historical averages not available for station {station_id}.")
-        print(f"[DEBUG] Using historical occupancy averages for station {station_id}")
+         # For future dates, use dynamic occupancy forecast.
+        try:
+            occupancy_model = load_model(station_id)
+            forecasted_occupancy = forecast_occupancy(occupancy_model, dt)
+            capacity = avg_capacity.get(station_id)  # Assume capacity remains constant over time.
+            num_docks_available = forecasted_occupancy
+            print(f"[DEBUG] Using dynamic occupancy forecast for station {station_id}")
+        except Exception as e:
+            # Fallback to historical averages
+            capacity = avg_capacity.get(station_id)
+            num_docks_available = avg_docks.get(station_id)
+            print(f"[DEBUG] Using historical occupancy averages for station {station_id} due to error: {e}")
     
     day_of_week = dt.weekday()
     
@@ -232,10 +234,9 @@ def predict_bike_availability(station_id, city, year, month, day, hour, minute):
     input_data = pd.DataFrame([{
         'station_id': station_id,
         'year': dt.year,
-        'month': dt.month,
-        # 'day': dt.day,
-        # 'day': dt.day,
-        'hour': dt.hour,
+        #'month': dt.month,
+
+        #'hour': dt.hour,
         'day_of_week': day_of_week,
         'num_docks_available': num_docks_available,
         'capacity': capacity,
@@ -255,18 +256,18 @@ def predict_bike_availability_route():
     """
     try:
         station_id = request.args.get("station_id", type=int)
-        city       = request.args.get("city", default="Dublin")
-        year       = request.args.get("year", type=int)
-        month      = request.args.get("month", type=int)
-        day        = request.args.get("day", type=int)
-        hour       = request.args.get("hour", type=int)
-        minute     = request.args.get("minute", type=int)
+        city = request.args.get("city", default="Dublin")
+        year = request.args.get("year", type=int)
+        month = request.args.get("month", type=int)
+        day = request.args.get("day", type=int)
+        hour = request.args.get("hour", type=int)
+        minute = request.args.get("minute", type=int)
 
         if None in [station_id, year, month, day, hour, minute]:
             return jsonify({"error": "One or more required parameters are missing"}), 400
 
         predicted_value = predict_bike_availability(
-            station_id=station_id, 
+            station_id=station_id,  
             city=city,
             year=year,
             month=month,
@@ -283,11 +284,6 @@ def predict_bike_availability_route():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    load_bike_data()
-
-    cap, docks = get_station_info(110)
-    print(f"Station 110: capacity = {cap}, available docks = {docks}")
-
     load_bike_data()
 
     cap, docks = get_station_info(110)
