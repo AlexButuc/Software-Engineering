@@ -56,14 +56,13 @@ trained_stations = {}
 for station in stations:
     try:
         model = train_occupancy_model(data, station)
-        filename = f"occupancy_model_station_{station}.pkl"
-        with open(filename, "wb")as file:
-            pickle.dump(model, file)
-        trained_stations[station] = filename
-        print(f"Trained and saved occupancy model for station {station} as {filename}.")
+        trained_stations[station] = model
+        print(f"Trained model for station {station}")
     except Exception as e:
         print(f"Error training model for station {station}: {e}")
 
+# Save all models into one .pkl file
 with open("trained_stations.pkl", "wb") as file:
     pickle.dump(trained_stations, file)
-print("Saved trained stations dictionary to 'trained_stations.pkl'.")    
+
+print(" All station models saved to 'trained_stations.pkl'.")  
