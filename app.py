@@ -132,7 +132,7 @@ def purchase():
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # This constructs the full path to our model file
-MODEL_PATH = os.path.join(BASE_DIR, "bike_station_avg_model.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "ml_model", "bike_station_rf_model.pkl")
 
 # This will load the pickle model using the constructed file path
 with open(MODEL_PATH, "rb") as file:
@@ -142,9 +142,9 @@ print("[DEBUG] Loaded ML model")
 # 2) Load historical average dictionaries for occupancy
 # These files were saved during training.
 
-with open("avg_docks.pkl", "rb") as f:
+with open(os.path.join(BASE_DIR, "ml_model", "avg_docks.pkl"), "rb") as f:
     avg_docks = pickle.load(f)
-with open("avg_capacity.pkl", "rb") as f:
+with open(os.path.join(BASE_DIR, "ml_model","avg_capacity.pkl"), "rb") as f:
     avg_capacity = pickle.load(f)
 print("[DEBUG] Loaded historical average occupancy data")
 
