@@ -3,7 +3,8 @@ from statsmodels.tsa.arima.model import ARIMA
 import pickle
 from datetime import datetime
 
-data = pd.read_csv("D:/UCD/Github/Software-Engineering/ml_model/bike_weather_data.xls")
+data = pd.read_csv("ml_model/bike_weather_data.csv")
+
 
 data["timestamp"] = pd.to_datetime(data["last_reported"])
 data = data.sort_values("timestamp")
@@ -22,8 +23,9 @@ def train_occupancy_model(data, station_id, order=(1,1,1)):
     station_data = station_data.sort_index()
     
     # Resample occupancy data to hourly frequency (adjust frequency as needed)
-    occupancy_ts = station_data["num_docks_available"].resample("H").mean()
-    occupancy_ts = occupancy_ts.fillna(method = "ffill")  
+    #terminal mentioned this was outdated and in the future will be depreciated so I went ahead and changed to an updated version
+    occupancy_ts = station_data["num_docks_available"].resample("h").mean()
+    occupancy_ts = occupancy_ts.ffill()
 
     model = ARIMA(occupancy_ts, order=order).fit()
     return model
